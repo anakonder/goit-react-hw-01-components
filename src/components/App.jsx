@@ -7,10 +7,11 @@ import './TransactionHistory.css'
 import user from '../path/user.json';
 import data from '../path/data.json';
 import friends from '../path/friends.json'
-import transaction from '../path/transactions.json'
+import transactions from '../path/transactions.json'
 import Profile from './Profile'
 import Statistics from './Statistics';
 import FriendList from './FriendList';
+import TransactionHistory from './TransactionHistory'
 
 // console.log(friends)
 
@@ -37,6 +38,9 @@ export const App = () => {
       />
     <FriendList
       friends={ friends }
+      />
+    <TransactionHistory
+        items={transactions}
       />
   </div>
   )
