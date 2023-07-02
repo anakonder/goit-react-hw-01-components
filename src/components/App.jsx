@@ -1,16 +1,41 @@
+import React from 'react';
+import Profile from './Profile'
+import './All.css'
+import './Profile.css';
+import './Statistics.css';
+import './FriendList.css'
+import user from '../path/user.json';
+import data from '../path/data.json';
+import friends from '../path/friends.json'
+import Statistics from './Statistics';
+import FriendList from './FriendList';
+
+// console.log(friends)
+
+const { followers, views, likes } = user.stats
+
+
 export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
+  return(
+  <div className='app-wrap'>        
+    <Profile
+      username={user.username}
+      tag={user.tag}
+      location={user.location}
+      avatar={user.avatar}
+      stats={{
+        followers: followers,
+        view: views,
+        likes: likes,
       }}
-    >
-      React homework template
-    </div>
-  );
+      />
+    <Statistics
+        dataList={ data }
+        title={ 'Upload stats' }
+      />
+    <FriendList
+      friends={ friends }
+      />
+  </div>
+  )
 };

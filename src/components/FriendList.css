@@ -1,0 +1,29 @@
+.friend {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 10px;
+
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px #5f5c5c;
+}
+
+.light-bulb {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+
+  background-color: green;
+  border-radius: 50%;
+}
+
+.friend-avatar {
+  width: 48px;
+  margin-right: 20px;
+
+  background-color: gray;
+  border-radius: 6px;
+}
