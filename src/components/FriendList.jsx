@@ -5,7 +5,7 @@ const FriendList = (props) => {
 
         <ul className="friend-list">
             {props.friends.map((friend) => 
-                <li className="friend">
+                <li key={friend.id} className="friend">
                     {friend.isOnline !== true ? <div className="light-bulb" style={{backgroundColor: "red"}}></div> : <div className="light-bulb"></div> }
                     <img
                         className="friend-avatar"

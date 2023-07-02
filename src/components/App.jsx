@@ -1,12 +1,14 @@
 import React from 'react';
-import Profile from './Profile'
 import './All.css'
 import './Profile.css';
 import './Statistics.css';
 import './FriendList.css'
+import './TransactionHistory.css'
 import user from '../path/user.json';
 import data from '../path/data.json';
 import friends from '../path/friends.json'
+import transaction from '../path/transactions.json'
+import Profile from './Profile'
 import Statistics from './Statistics';
 import FriendList from './FriendList';
 
