@@ -1,7 +1,8 @@
-.friend-list {
+.friendList {
   margin-bottom: 100px;
 }
-.friend {
+
+.item {
   display: flex;
   align-items: center;
   width: 250px;
@@ -14,16 +15,17 @@
   box-shadow: 2px 2px 4px #5f5c5c;
 }
 
-.light-bulb {
+.status {
+  display: block;
   width: 10px;
   height: 10px;
   margin-right: 10px;
 
-  background-color: green;
+  background-color: red;
   border-radius: 50%;
 }
 
-.friend-avatar {
+.avatar {
   width: 48px;
   margin-right: 20px;
 
