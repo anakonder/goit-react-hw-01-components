@@ -1,5 +1,6 @@
 import styles from './Statistics.module.css'
 import { getRandomColor } from '../../helpers/RandomColorFunc'
+import PropTypes from "prop-types";
 console.log("current color now", getRandomColor())
 
 const Statistics = (props) => {
@@ -28,6 +29,10 @@ return (
     )
 }
 
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.array.isRequired
+}
 
 export default Statistics;
 

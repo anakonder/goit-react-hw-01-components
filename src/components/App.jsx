@@ -8,7 +8,7 @@ import Profile from './Profile/Profile'
 import Statistics from './Statistics/Statistics';
 import FriendList from './FriendList/FriendList';
 import TransactionHistory from './TransactionHistory/TransactionHistory'
-import PropTypes from "prop-types";
+
 // console.log(friends)
 
 
@@ -38,19 +38,6 @@ export const App = () => {
   )
 };
 
-Profile.PropTypes = {
-  username: PropTypes.string.isRequired,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  avatar: PropTypes.string,
-  stats: PropTypes.object.isRequired
-}
 
-Statistics.PropTypes = {
-  title: PropTypes.string,
-  stats: PropTypes.array.isRequired
-}
 
-TransactionHistory.PropTypes = {
-  items: PropTypes.array.isRequired
-}
+
