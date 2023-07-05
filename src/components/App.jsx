@@ -1,9 +1,6 @@
 import React from 'react';
 import './All.css'
-import './Profile/Profile.css';
-import './Statistics/Statistics.css';
-// import './FriendList/FriendList.css'
-import './TransactionHistory/TransactionHistory.css'
+// import './TransactionHistory/TransactionHistory.css'
 import user from '../path/user.json';
 import data from '../path/data.json';
 import friends from '../path/friends.json'
@@ -28,8 +25,8 @@ export const App = () => {
         
       />
     <Statistics
-        dataList={ data }
         title='Upload stats' 
+        stats={ data }
       />
     <FriendList
        friends={ friends }

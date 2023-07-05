@@ -1,31 +1,33 @@
+import styles from './Profile.module.css'
+
 const Profile = (props) => {
     const {followers, views, likes} = props.stats
     return (
 
-    <div className="profile">
-      <div className="description">
+    <div className={styles.profile}>
+      <div className={styles.description}>
         <img
           src={props.avatar}
           alt="User avatar"
-          className="avatar"
+          className={styles.avatar}
         />
-        <h2 className="name">{ props.username }</h2>
-        <p className="tag">@{ props.tag }</p>
-                <p className="location">{ props.location }</p>
+        <h2 className={styles.name}>{ props.username }</h2>
+        <p className={styles.tag}>@{ props.tag }</p>
+                <p className={styles.location}>{ props.location }</p>
       </div>
     
-      <ul className="stats">
+      <ul className={styles.stats}>
         <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{ followers }</span>
+          <span className={styles.label}>Followers</span>
+          <span className={styles.quantity}>{ followers }</span>
         </li>
         <li>
-          <span className="label">Views</span>
-          <span className="quantity">{ views }</span>
+          <span className={styles.label}>Views</span>
+          <span className={styles.quantity}>{ views }</span>
         </li>
         <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{ likes }</span>
+          <span className={styles.label}>Likes</span>
+          <span className={styles.quantity}>{ likes }</span>
         </li>
       </ul>
     </div>

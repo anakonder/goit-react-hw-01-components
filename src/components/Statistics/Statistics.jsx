@@ -1,4 +1,5 @@
-import {getRandomColor} from '../../helpers/RandomColorFunc'
+import styles from './Statistics.module.css'
+import { getRandomColor } from '../../helpers/RandomColorFunc'
 console.log("current color now", getRandomColor())
 
 const Statistics = (props) => {
@@ -6,18 +7,18 @@ const Statistics = (props) => {
    
 return (
 
-<section className="statistics">
+<section className={styles.statistics}>
     
-  {props.title && <h2 className="title">{ props.title }</h2>}
+  {props.title && <h2 className={styles.title}>{ props.title }</h2>}
 
-  <ul className="stat-list">
-    {props.dataList.map((item) => ( 
+  <ul className={styles.statList}>
+    {props.stats.map((item) => ( 
         <li
             key={item.id}
-            className="item"
+            className={styles.item}
             style={{ backgroundColor: getRandomColor() }}> 
-      <span className="label">{ item.label }</span>
-      <span className="percentage">{ item.percentage }%</span>
+      <span className={styles.label}>{ item.label }</span>
+      <span className={styles.percentage}>{ item.percentage }%</span>
      </li>
     ))}
   </ul>
