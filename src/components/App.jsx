@@ -25,10 +25,10 @@ export const App = () => {
       />
     <Statistics
         title='Upload stats' 
-        stats={ data }
+        stats={data}
       />
     <FriendList
-       friends={ friends }
+       friends={friends}
         
       />
     <TransactionHistory

@@ -35,3 +35,12 @@
   text-align: left;
   padding-left: 136px;
 }
+
+.rowBlue {
+  background-color: rgb(192, 223, 233);
+  color: white;
+}
+
+.rowWhite {
+  background-color: white;
+}

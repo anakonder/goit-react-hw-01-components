@@ -3,7 +3,7 @@ import styles from './FriendList.module.css'
 import PropTypes from "prop-types";
 
 const FriendList = ({friends}) => {
-    console.log('friendlist', friends)
+    // console.log('friendlist', friends)
     return (
 
         <ul className={styles.friendList}>
